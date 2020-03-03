@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
 import { SearchBox } from './components/search-box/search-box.component';
+import { Practice } from './components/practice/practice.component';
 import './App.css';
+
+export const young = () => {
+
+}
 
 // Component allows to use state
 // can also do: class App extends React.Component
@@ -52,6 +57,7 @@ class App extends Component {
         <h1>Monsters Rolodex</h1>
         <SearchBox placeholder='Search monsters' handleChange={this.handleChange} />
         <CardList monsters={filteredMonsters}></CardList> {/* Monsters is a prop */}
+        <Practice increment={1}></Practice>
       </div>
     );
   }
